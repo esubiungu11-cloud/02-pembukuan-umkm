@@ -2,155 +2,233 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>25 Nabi & Rosul Mukjizatnya - Gold Black Shimmer</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>TEMPLATE UMKM PRO NOTARIS GOLD BLACK SHIMMER</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#050507;color:#f6e9a9;min-height:100vh;overflow-x:hidden;position:relative}
-body::before{content:'';position:fixed;top:-70%;left:-70%;width:240%;height:240%;background:repeating-linear-gradient(115deg,transparent 0 40px,rgba(212,175,55,0.04) 40px 41px,transparent 41px 80px);animation:shimmerMove 7s linear infinite;pointer-events:none;z-index:0}
-@keyframes shimmerMove{0%{transform:translate(0,0)}100%{transform:translate(80px,80px)}}
-body::after{content:'';position:fixed;inset:-30%;background:radial-gradient(ellipse at 20% 20%,rgba(212,175,55,0.18),transparent 50%),radial-gradient(ellipse at 80% 80%,rgba(212,175,55,0.12),transparent 50%);animation:glowPulse 6s ease-in-out infinite alternate;pointer-events:none;z-index:0}
-@keyframes glowPulse{0%{opacity:.6}100%{opacity:1}}
-.wrap{max-width:540px;margin:0 auto;padding:12px 12px 90px;position:relative;z-index:2}
-.head{border:2px solid #d4af37;border-radius:20px;padding:18px 14px;text-align:center;background:linear-gradient(180deg,#1e1c0f,#0b0a06);box-shadow:0 0 45px rgba(212,175,55,.35),inset 0 1px 0 rgba(255,255,255,.12);position:relative;overflow:hidden}
-.head::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(100deg,transparent 20%,rgba(255,234,167,.25) 50%,transparent 80%);animation:goldSweep 3s ease-in-out infinite;z-index:1}
-@keyframes goldSweep{0%{left:-100%}50%{left:100%}100%{left:100%}}
-.head *{position:relative;z-index:2}
-.head h1{margin-top:10px;font-size:19px;font-weight:800;line-height:1.1;background:linear-gradient(90deg,#ffeaa7,#d4af37,#a67c00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 8px rgba(212,175,55,.4))}
-.head.sub{margin-top:8px;font-size:10px;color:#c9b86e;line-height:1.6}
-.badge{display:inline-flex;margin-top:10px;padding:6px 14px;border-radius:20px;background:linear-gradient(90deg,#ffeaa7,#d4af37);color:#000;font-size:9px;font-weight:800;letter-spacing:.8px;box-shadow:0 0 15px rgba(212,175,55,.5);animation:badgeShimmer 2s ease-in-out infinite alternate}
-@keyframes badgeShimmer{0%{box-shadow:0 0 10px rgba(212,175,55,.4)}100%{box-shadow:0 0 25px rgba(212,175,55,.8)}}
-.tools{margin:12px 0;display:grid;grid-template-columns:1fr auto auto;gap:8px;position:sticky;top:8px;z-index:5;background:rgba(5,5,7,.92);backdrop-filter:blur(12px);padding:6px;border-radius:14px;border:1px solid rgba(212,175,55,.2)}
-.tools input{padding:11px 12px;border-radius:11px;border:1px solid rgba(212,175,55,.25);background:#101010;color:#f6e9a9;font-size:12px;outline:none}
-.btn{padding:11px 12px;border-radius:11px;border:none;background:linear-gradient(90deg,#ffeaa7,#d4af37);color:#000;font-weight:800;font-size:10px;cursor:pointer;box-shadow:0 2px 10px rgba(212,175,55,.3)}
-.btn2{padding:11px 12px;border-radius:11px;border:1px solid rgba(212,175,55,.35);background:#111;color:#d4af37;font-weight:700;font-size:10px;cursor:pointer}
-.progress{height:7px;background:#111;border-radius:10px;overflow:hidden;border:1px solid rgba(212,175,55,.2);margin:8px 0;position:relative}
-.progress i{display:block;height:100%;background:linear-gradient(90deg,#ffeaa7,#d4af37,#a67c00);width:0%;transition:.5s;box-shadow:0 0 10px rgba(212,175,55,.6);position:relative;overflow:hidden}
-.progress i::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);animation:progressShimmer 1.5s linear infinite}
-@keyframes progressShimmer{0%{left:-100%}100%{left:100%}}
-.count{font-size:9px;color:#8a7e53;text-align:center;margin:4px 0}
-.timeline{position:relative;padding-left:28px;margin-top:14px}
-.timeline::before{content:'';position:absolute;left:9px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,#d4af37,#a67c00,#222);border-radius:2px;box-shadow:0 0 8px rgba(212,175,55,.5)}
-.item{position:relative;margin-bottom:14px;cursor:pointer;transition:.2s}
-.item:active{transform:scale(.98)}
-.dot{position:absolute;left:-24px;top:12px;width:14px;height:14px;border-radius:50%;background:radial-gradient(#ffeaa7,#d4af37);border:2px solid #000;box-shadow:0 0 0 3px rgba(212,175,55,.3),0 0 15px rgba(212,175,55,.8);z-index:2;animation:dotPulse 2s ease-in-out infinite}
-@keyframes dotPulse{0%,100%{box-shadow:0 0 0 3px rgba(212,175,55,.3),0 0 12px rgba(212,175,55,.6)}50%{box-shadow:0 0 0 5px rgba(212,175,55,.15),0 0 20px rgba(212,175,55,.9)}}
-.item.read.dot{background:radial-gradient(#7CFC9B,#2f9d4a);box-shadow:0 0 0 3px rgba(124,252,155,.3),0 0 12px rgba(124,252,155,.7)}
-.card{background:linear-gradient(180deg,#1b1a12,#10100a);border:1px solid rgba(212,175,55,.22);border-radius:16px;padding:12px 12px 10px;box-shadow:0 6px 20px rgba(0,0,0,.6);position:relative;overflow:hidden}
-.card::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(100deg,transparent 0%,rgba(212,175,55,.08) 50%,transparent 100%);animation:cardShimmer 4s ease-in-out infinite;pointer-events:none}
-@keyframes cardShimmer{0%{left:-100%}60%{left:-100%}100%{left:100%}}
-.card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#d4af37,transparent);opacity:.8}
-.no{font-size:9px;font-weight:800;color:#000;background:linear-gradient(90deg,#ffeaa7,#d4af37);padding:3px 8px;border-radius:10px;box-shadow:0 0 8px rgba(212,175,55,.4)}
-.name{font-weight:800;color:#f9e27d;font-size:13px;display:flex;align-items:center;gap:6px}
-.ar{font-family:'Amiri',serif;color:#d4af37;font-size:15px;text-shadow:0 0 6px rgba(212,175,55,.5)}
-.muk{display:flex;align-items:center;gap:6px;margin-top:8px;padding:8px 9px;border-radius:10px;background:rgba(212,175,55,.09);border:1px dashed rgba(212,175,55,.3);font-size:11px;color:#f6e9a9;position:relative;overflow:hidden}
-.muk::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,234,167,.15),transparent);animation:mukShimmer 3.5s linear infinite}
-@keyframes mukShimmer{0%{left:-100%}100%{left:100%}}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);z-index:20;display:none;align-items:flex-end;justify-content:center;padding:12px}
-.modal.show{display:flex}
-.sheet{width:100%;max-width:560px;background:linear-gradient(180deg,#1e1c0f,#0c0b06);border:2px solid #d4af37;border-radius:20px;padding:14px;max-height:86vh;overflow:auto;box-shadow:0 -10px 50px rgba(212,175,55,.35);animation:up.4s ease;position:relative;overflow:hidden}
-.sheet::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(100deg,transparent,rgba(212,175,55,.12),transparent);animation:goldSweep 2.5s ease-in-out infinite}
-@keyframes up{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
-.sec{margin-top:12px;padding:10px;border-radius:12px;background:#0f0f0f;border:1px solid rgba(212,175,55,.18);position:relative;z-index:1}
-.sec h3{font-size:10px;color:#d4af37;letter-spacing:.8px;margin-bottom:6px}
-.sec p{font-size:11px;color:#d7c88a;line-height:1.6}
-.close{width:100%;margin-top:12px;padding:12px;border-radius:12px;border:none;background:linear-gradient(90deg,#ffeaa7,#d4af37);color:#000;font-weight:800;font-size:11px;box-shadow:0 0 15px rgba(212,175,55,.4);cursor:pointer;position:relative;z-index:1}
-.quizBox{display:none;margin-top:12px;padding:12px;border-radius:16px;background:#111;border:1px solid rgba(212,175,55,.25);box-shadow:0 0 20px rgba(212,175,55,.15)}
-.quizBox.show{display:block}
-.qOpt{margin-top:8px;padding:10px;border-radius:10px;background:#0d0d0d;border:1px solid rgba(212,175,55,.2);font-size:11px;cursor:pointer;transition:.2s}
-.qOpt:hover{border-color:#d4af37;background:#15150e}
-.qOpt.correct{background:#0f2815;border-color:#7CFC9B;color:#7CFC9B;box-shadow:0 0 10px rgba(124,252,155,.3)}
-.qOpt.wrong{background:#2a1212;border-color:#ff6b6b;color:#ff8a8a}
+body{background:#070707;color:#f6e9a9;min-height:100vh;padding:12px 10px 90px;position:relative}
+body::before{content:'';position:fixed;top:-60%;left:-60%;width:220%;height:220%;background:repeating-linear-gradient(115deg,transparent 0 40px,rgba(212,175,55,0.04) 40px 41px,transparent 41px 80px);animation:sh 8s linear infinite;pointer-events:none}
+@keyframes sh{to{transform:translate(40px,40px)}}
+.wrap{max-width:520px;margin:0 auto;position:relative;z-index:1}
+.head{border:1.8px solid #d4af37;border-radius:16px;padding:12px;text-align:center;background:linear-gradient(180deg,#1a1a1a,#0c0c0c);box-shadow:0 0 25px rgba(212,175,55,.22)}
+.head h1{font-size:12px;font-weight:800;letter-spacing:.8px;background:linear-gradient(90deg,#ffeaa7,#d4af37);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.25}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0}
+.st{background:#111;border:1px solid rgba(212,175,55,.2);border-radius:12px;padding:8px;text-align:center}
+.st.l{font-size:8px;color:#9a8a55;letter-spacing:.6px}.st.v{font-size:12px;font-weight:800;margin-top:2px}
+.st.gold.v{color:#f9e27d}.st.green.v{color:#7CFC9B}.st.red.v{color:#ff8a8a}
+.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0}
+.tab{padding:10px;border-radius:10px;border:1px solid rgba(212,175,55,.25);background:#111;color:#b8a86a;font-size:10px;font-weight:700;letter-spacing:.6px;cursor:pointer}
+.tab.active{background:linear-gradient(90deg,#f9e27d,#d4af37);color:#000;border-color:#d4af37;box-shadow:0 0 12px rgba(212,175,55,.4)}
+.card{background:linear-gradient(180deg,#1c1c1c,#101010);border:1px solid rgba(212,175,55,.18);border-radius:14px;padding:12px;margin-bottom:10px}
+.card h2{font-size:10px;color:#d4af37;letter-spacing:1px;margin-bottom:8px}
+input,select{width:100%;padding:10px;border-radius:9px;border:1px solid rgba(212,175,55,.18);background:#0d0d0d;color:#f6e9a9;font-size:12px;outline:none}
+input:focus,select:focus{border-color:#d4af37}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.btn{width:100%;padding:11px;border:none;border-radius:10px;background:linear-gradient(90deg,#ffeaa7,#d4af37);color:#000;font-weight:800;font-size:11px;letter-spacing:.8px;cursor:pointer}
+.btn2{padding:8px 10px;border-radius:9px;border:1px solid rgba(212,175,55,.3);background:#111;color:#d4af37;font-size:10px;font-weight:700;cursor:pointer}
+table{width:100%;border-collapse:collapse;margin-top:8px}
+th{font-size:8px;color:#8a7e53;text-align:left;padding:6px;border-bottom:1px solid rgba(212,175,55,.15);letter-spacing:.5px}
+td{font-size:11px;padding:8px 6px;border-bottom:1px solid rgba(255,255,255,.05)}
+.badge{padding:3px 7px;border-radius:12px;font-size:8px;font-weight:800}
+.b-cash{background:#1a2e1a;color:#7CFC9B}.b-tf{background:#1a2333;color:#7fb3ff}.b-qris{background:#2a1a33;color:#c28bff}
+.saldo{font-size:10px;color:#9a8a55}
+.act{cursor:pointer;margin-left:6px}
+.bar{display:flex;align-items:end;gap:4px;height:90px;margin-top:10px}
+.bar div{flex:1;background:linear-gradient(180deg,#ffeaa7,#d4af37);border-radius:4px 4px 0 0;min-height:4px;position:relative}
+.bar div span{position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:8px;color:#d4af37}
+.pie{width:110px;height:110px;border-radius:50%;margin:10px auto;background:conic-gradient(#d4af37 0% 100%,#111 100%);position:relative;display:flex;align-items:center;justify-content:center}
+.pie::after{content:'';width:64px;height:64px;background:#0e0e0e;border-radius:50%;position:absolute}
+.pie b{position:relative;z-index:1;font-size:11px;color:#f9e27d;text-align:center;line-height:1.1}
+.foot{position:fixed;bottom:0;left:0;right:0;background:#0a0a0a;border-top:1px solid rgba(212,175,55,.2);padding:8px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;max-width:520px;margin:0 auto;z-index:10}
+.hide{display:none}
+.small{font-size:9px;color:#7a6f4a;margin-top:4px}
 </style>
 </head>
 <body>
 <div class="wrap">
-<div class="head">
-<h1>25 NABI & RASUL<br>BERSERTA MUKJIZATNYA</h1>
-<div class="sub">Perjalanan silsilah penuh <b style="color:#ffeaa7">Gold Shimmer</b> dari Adam hingga Muhammad ﷺ. Klik setiap Nabi!</div>
-<div class="badge">✨ GOLD BLACK SHIMMER PRO MAX • BRO OFFICIAL</div>
+<div class="head"><h1>TEMPLATE UMKM PRO NOTARIS<br>GOLD BLACK SHIMMER</h1></div>
+<div class="stats">
+<div class="st green"><div class="l">PEMASUKAN</div><div class="v" id="inV">Rp 0</div></div>
+<div class="st red"><div class="l">PENGELUARAN</div><div class="v" id="outV">Rp 0</div></div>
+<div class="st gold"><div class="l">SALDO AKHIR</div><div class="v" id="balV">Rp 0</div></div>
 </div>
-<div class="tools">
-<input type="text" id="cari" placeholder="Cari: Musa belah laut, Isa, hujan..." oninput="render()">
-<button class="btn" onclick="toggleQuiz()">QUIZ</button>
-<button class="btn2" onclick="resetProgress()">RESET</button>
+<div class="tabs">
+<button class="tab active" onclick="switchTab('transaksi')" id="t-transaksi">TRANSAKSI</button>
+<button class="tab" onclick="switchTab('laporan')" id="t-laporan">LAPORAN</button>
+<button class="tab" onclick="switchTab('grafik')" id="t-grafik">GRAFIK</button>
 </div>
-<div class="progress"><i id="prog"></i></div>
-<div class="count" id="count">0 dari 25 Nabi telah dibaca • 0% perjalanan selesai</div>
-<div id="quiz" class="quizBox">
-<h3 style="font-size:11px;color:#d4af37;letter-spacing:.8px">MODE QUIZ - TEBAK MUKJIZAT</h3>
-<div id="qText" style="font-size:12px;margin-top:8px;color:#f6e9a9;font-weight:700"></div>
-<div id="qOpts"></div>
-<div style="margin-top:10px;display:flex;gap:8px"><button class="btn" style="flex:1" onclick="nextQ()">LANJUT</button><button class="btn2" style="flex:1" onclick="toggleQuiz()">TUTUP</button></div>
-<div id="qScore" style="font-size:10px;color:#8a7e53;margin-top:8px;text-align:center"></div>
+
+<div id="page-transaksi">
+<div class="card">
+<h2>✏️ TAMBAH TRANSAKSI</h2>
+<div class="grid2">
+<div><input type="date" id="tgl"></div>
+<div><select id="tipe"><option value="masuk">Pemasukan</option><option value="keluar">Pengeluaran</option></select></div>
 </div>
-<div class="timeline" id="timeline"></div>
-<div style="text-align:center;margin-top:18px;padding:14px;border:1px dashed rgba(212,175,55,.3);border-radius:14px;background:rgba(212,175,55,.06);position:relative;overflow:hidden">
-<div style="position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(212,175,55,.1),transparent);animation:goldSweep 3s infinite"></div>
-<div style="font-family:'Amiri',serif;color:#d4af37;font-size:12px;position:relative">“Kami tidak membeda-bedakan seorang pun dari rasul-rasul-Nya.”</div>
-<div style="font-size:9px;color:#8a7e53;margin-top:4px;position:relative">QS. Al-Baqarah:285 • GOLD BLACK SHIMMER EDITION • BRO OFFICIAL</div>
+<div style="margin-top:8px"><input type="text" id="uraian" placeholder="Uraian: Kopi, gula, beras, bensin"></div>
+<div class="grid3" style="margin-top:8px">
+<div><input type="number" id="jumlah" placeholder="Jumlah Rp"></div>
+<div><select id="kategori"><option>Penjualan</option><option>Bahan Baku</option><option>Bensin</option><option>Rokok</option><option>Gula</option><option>Lainnya</option></select></div>
+<div><select id="metode"><option>Cash</option><option>Transfer</option><option>QRIS</option><option>E-Wallet</option></select></div>
+</div>
+<div style="margin-top:10px"><button class="btn" onclick="add()">SIMPAN TRANSAKSI</button></div>
+<div class="small">Contoh : 11/10/2026 | Kopi,gula,beras,bensin | Rp ... | Cash</div>
+</div>
+
+<div class="card">
+<h2>🔍 FILTER & DAFTAR - <span id="count">0 transaksi</span></h2>
+<div class="grid2">
+<input type="text" id="cari" placeholder="Cari: kopi, bensin..." oninput="render()">
+<select id="filterBulan" onchange="render()"></select>
+</div>
+<table>
+<thead><tr><th>TGL</th><th>URAIAN</th><th>JUMLAH</th><th>SALDO</th><th></th></tr></thead>
+<tbody id="list"></tbody>
+</table>
 </div>
 </div>
-<div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="sheet" id="sheet"></div></div>
+
+<div id="page-laporan" class="hide">
+<div class="card"><h2>RINGKASAN PER KATEGORI</h2><div id="perKat"></div></div>
+<div class="card"><h2>REKAP BULANAN</h2><div id="perBulan"></div></div>
+</div>
+
+<div id="page-grafik" class="hide">
+<div class="card"><h2>GRAFIK 7 HARI</h2><div class="bar" id="bar7"></div></div>
+<div class="card"><h2>GRAFIK KATEGORI</h2><div class="pie"><b id="pieLabel">0%</b></div><div id="katLegend" class="small" style="text-align:center"></div></div>
+</div>
+
+</div>
+
+<div class="foot">
+<button class="btn2" onclick="exportCSV()">CSV</button>
+<button class="btn2" onclick="exportPDF()">PDF</button>
+<button class="btn2" onclick="backup()">BACKUP</button>
+<button class="btn2" onclick="hapusSemua()" style="color:#ff8a8a;border-color:#ff8a8a33">HAPUS</button>
+</div>
+
 <script>
-const data=[
-{n:1,nama:'NABI ADAM',ar:'عليه السلام',utus:'Seluruh Manusia',lok:'Surga → Bumi',umur:'930 tahun',muk:'Diciptakan tanpa ayah & ibu dari tanah',icon:'👤',kisah:'Manusia pertama dari tanah, diajarkan nama segala sesuatu, khalifah pertama.',dalil:'QS. Al-Baqarah:31 - Dan Dia mengajarkan kepada Adam nama-nama seluruhnya.',hikmah:'Asal kita mulia, tugas memakmurkan bumi.',doa:'Rabbana zhalamna anfusana...'},
-{n:2,nama:'NABI IDRIS',ar:'عليه السلام',utus:'Kaum pada masanya',lok:'Babilonia',umur:'82 tahun di bumi, diangkat',muk:'Ilmu menulis, menjahit & astronomi pertama',icon:'✒️',kisah:'Pertama menulis dengan pena dan menjahit pakaian. Diberi 30 suhuf.',dalil:'QS. Maryam:56-57 - Dan ceritakanlah Idris...',hikmah:'Ilmu adalah mukjizat.',doa:'Doa ahli ilmu'},
-{n:3,nama:'NABI NUH',ar:'عليه السلام',utus:'Kaum Nuh',lok:'Irak',umur:'950 tahun berdakwah',muk:'Bahtera raksasa selamat dari banjir besar',icon:'🛳️',kisah:'Berdakwah 950 tahun, buat kapal besar di gunung, banjir tenggelamkan kafir.',dalil:'QS. Hud:37 - Buatlah bahtera dengan pengawasan Kami.',hikmah:'Sabar luar biasa dalam dakwah.',doa:'Rabbi inni maghlubun fantasir'},
-{n:4,nama:'NABI HUD',ar:'عليه السلام',utus:"Kaum 'Aad",lok:'Al-Ahqaf Yaman',umur:'150 tahun',muk:'Selamat dari angin topan 7 malam 8 hari',icon:'🌪️',kisah:"Kaum 'Aad raksasa sombong dihancurkan angin dingin.",dalil:"QS. Al-Haqqah:6-7 - Dibinasakan dengan angin sangat dingin.",hikmah:'Kuat tanpa iman hancur.',doa:'Doa perlindungan'},
-{n:5,nama:'NABI SALEH',ar:'عليه السلام',utus:'Kaum Tsamud',lok:'Mada\'in Saleh',umur:'120 tahun',muk:'Unta betina keluar dari batu besar',icon:'🐪',kisah:'Unta keluar dari batu, kaum sembelih lalu ditimpa petir.',dalil:'QS. Asy-Syams:13 - Unta betina Allah...',hikmah:'Jangan mainkan mukjizat.',doa:'Doa syukur'},
-{n:6,nama:'NABI IBRAHIM',ar:'عليه السلام',utus:'Namrud & manusia',lok:'Babilonia→Makkah',umur:'175 tahun',muk:'Api Namrud jadi dingin tidak membakar',icon:'🔥',kisah:'Dibakar hidup, Allah berfirman Ya nar kuni bardan - jadi dingin.',dalil:'QS. Al-Anbiya:69 - Wahai api jadilah dingin...',hikmah:'Tauhid tak takut api.',doa:'Hasbunallah wa ni\'mal wakil'},
-{n:7,nama:'NABI LUTH',ar:'عليه السلام',utus:'Kaum Sodom',lok:'Laut Mati',umur:'75 tahun',muk:'Selamat, kaum dijungkirbalikkan',icon:'🏚️',kisah:'Kaum LGBT pertama dijungkirbalikkan & hujan batu.',dalil:'QS. Hud:82 - Kami jungkir balikkan...',hikmah:'Peringatan fitrah.',doa:'Rabbi najjini wa ahli'},
-{n:8,nama:'NABI ISMAIL',ar:'عليه السلام',utus:'Arab Jurhum',lok:'Makkah',umur:'137 tahun',muk:'Selamat sembelihan & Zamzam',icon:'💧',kisah:'Patuh disembelih diganti domba, hentakan kaki keluar Zamzam.',dalil:'QS. As-Saffat:107 - Kami tebus dengan sembelihan besar.',hikmah:'Taat total.',doa:'Doa pengorbanan'},
-{n:9,nama:'NABI ISHAQ',ar:'عليه السلام',utus:'Kana\'an',lok:'Palestina',umur:'180 tahun',muk:'Lahir ibu 90 tahun mandul',icon:'👶',kisah:'Sarah 90 tahun mandul punya Ishaq, mustahil jadi mungkin.',dalil:'QS. Hud:71 - Kabar gembira tentang Ishaq.',hikmah:'Jangan putus asa rahmat.',doa:'Doa keturunan shaleh'},
-{n:10,nama:'NABI YA\'QUB',ar:'عليه السلام',utus:'Bani Israil',lok:'Palestina→Mesir',umur:'147 tahun',muk:'Buta sembuh cium baju Yusuf',icon:'👁️',kisah:'Punya 12 anak jadi 12 suku, buta karena sedih kehilangan Yusuf.',dalil:'QS. Yusuf:96 - Diletakkan baju ke wajah Ya\'qub...',hikmah:'Harapan tak padam.',doa:'Innama asyku...'},
-{n:11,nama:'NABI YUSUF',ar:'عليه السلام',utus:'Mesir',lok:'Palestina→Mesir',umur:'110 tahun',muk:'Tafsir mimpi paling akurat',icon:'💭',kisah:'Mimpi 11 bintang sujud, dari sumur ke istana Mesir.',dalil:'QS. Yusuf:21 - Allah berkuasa...',hikmah:'Sabar & maafkan.',doa:'Tawaffani musliman...'},
-{n:12,nama:'NABI AYYUB',ar:'عليه السلام',utus:'Hauran',lok:'Damaskus',umur:'140 tahun',muk:'Sembuh penyakit 18 tahun',icon:'💛',kisah:'Kaya raya diuji habis & sakit 18 tahun tetap sabar.',dalil:'QS. Al-Anbiya:83 - Aku ditimpa penyakit...',hikmah:'Sabar 18 tahun tanpa ngeluh.',doa:'Anni massaniyadh-dhurru...'},
-{n:13,nama:'NABI SYUAIB',ar:'عليه السلام',utus:'Madyan',lok:'Tabuk',umur:'110 tahun',muk:'Azab gempa pedagang curang',icon:'⚖️',kisah:'Kaum curang timbangan diguncang gempa mati berlutut.',dalil:'QS. Al-A\'raf:85 - Sempurnakan takaran...',hikmah:'Jujur dagang ibadah.',doa:'Doa jujur'},
-{n:14,nama:'NABI MUSA',ar:'عليه السلام',utus:"Fir'aun",lok:'Mesir→Sinai',umur:'120 tahun',muk:'Tongkat ular & belah Laut Merah',icon:'🌊',kisah:'Dihanyutkan Nil, tongkat jadi ular makan ular penyihir, belah laut 12 jalan.',dalil:'QS. Asy-Syu\'ara:63 - Terbelahlah lautan...',hikmah:'Berani lawan zalim.',doa:'Rabbi inni...'},
-{n:15,nama:'NABI HARUN',ar:'عليه السلام',utus:'Bani Israil',lok:'Mesir',umur:'122 tahun',muk:'Fasih berbicara',icon:'🗣️',kisah:'Kakak Musa fasih, pendamping dakwah lembut.',dalil:'QS. TaHa:29-32 - Jadikan Harun pembantu...',hikmah:'Dakwah butuh partner.',doa:'Doa kerjasama'},
-{n:16,nama:'NABI DZULKIFLI',ar:'عليه السلام',utus:'Damaskus',lok:'Damaskus',umur:'75 tahun',muk:'Sabar menahan amarah & adil',icon:'⚖️',kisah:'Sanggup puasa siang shalat malam tidak marah diuji iblis.',dalil:'QS. Al-Anbiya:85 - Termasuk orang sabar.',hikmah:'Tahan marah mukjizat.',doa:'Doa tahan marah'},
-{n:17,nama:'NABI DAUD',ar:'عليه السلام',utus:'Bani Israil',lok:'Palestina',umur:'100 tahun',muk:'Besi lunak & suara gunung tasbih',icon:'⚒️',kisah:'Kalahkan Jalut raksasa, besi lunak di tangan, gunung ikut tasbih.',dalil:'QS. Saba:10 - Kami lunakkan besi...',hikmah:'Kuat+seni+ibadah.',doa:'Tasbih Daud'},
-{n:18,nama:'NABI SULAIMAN',ar:'عليه السلام',utus:'Manusia jin hewan angin',lok:'Yerusalem',umur:'53 tahun raja',muk:'Bicara semut, kuasai angin & jin',icon:'💨',kisah:'Angin kendaraan, jin pekerja, bicara semut & Hud-hud.',dalil:'QS. An-Naml:16 - Diberi pengertian suara burung.',hikmah:'Kuasa tetap sujud.',doa:'Rabbi auzi\'ni...'},
-{n:19,nama:'NABI ILYAS',ar:'عليه السلام',utus:"Ba'al",lok:"Ba'labak",umur:'Diangkat',muk:'Doa turunkan hujan 3 th kemarau',icon:'🌧️',kisah:"Kaum sembah Ba'al, tahan hujan 3 tahun lalu turun lebat.",dalil:"QS. As-Saffat:123 - Sesungguhnya Ilyas termasuk rasul.",hikmah:'Hujan rahmat.',doa:'Doa hujan'},
-{n:20,nama:'NABI ILYASA',ar:'عليه السلام',utus:'Bani Israil',lok:'Syam',umur:'-',muk:'Sembuhkan & hidupkan izin Allah',icon:'📢',kisah:'Murid Ilyas lanjutkan dakwah keras.',dalil:"QS. Al-An'am:86 - Kami lebihkan derajatnya.",hikmah:'Lanjutkan guru.',doa:'Doa penerus'},
-{n:21,nama:'NABI YUNUS',ar:'عليه السلام',utus:'Nainawa 100rb',lok:'Irak→laut',umur:'70 tahun',muk:'Hidup 40 hari perut ikan besar',icon:'🐋',kisah:'Dakwah ditolak marah pergi, ditelan ikan 40 hari tasbih La ilaha illa anta...',dalil:'QS. Al-Anbiya:87 - La ilaha illa anta...',hikmah:'Jangan kabur dakwah.',doa:'La ilaha illa anta subhanaka...'},
-{n:22,nama:'NABI ZAKARIA',ar:'عليه السلام',utus:'Bani Israil',lok:'Yerusalem',umur:'120 tahun',muk:'Anak Yahya umur 90 istri 80 mandul',icon:'🍼',kisah:'Tukang kayu pengasuh Maryam, doa di mihrab dikabulkan Yahya.',dalil:'QS. Maryam:8-9 - Bagaimana ada anak padahal mandul...',hikmah:'Mustahil jadi mungkin.',doa:'Rabbi la tazarni fardan...'},
-{n:23,nama:'NABI YAHYA',ar:'عليه السلام',utus:'Bani Israil',lok:'Yerusalem',umur:'30 syahid',muk:'Hikmah sejak bayi suci',icon:'📖',kisah:'Sejak kecil alim tak pernah dosa, tegur raja Herodes dipenggal syahid.',dalil:'QS. Maryam:12 - Ambillah Al-Kitab sungguh2.',hikmah:'Berani benar.',doa:'Doa berani'},
-{n:24,nama:'NABI ISA',ar:'عليه السلام',utus:'Bani Israil',lok:'Palestina',umur:'33 diangkat langit',muk:'Bicara bayi, hidupkan mati, sembuh buta kusta',icon:'✨',kisah:'Lahir tanpa ayah, bayi bicara Inni Abdullah, bikin burung hidup, sembuhkan buta.',dalil:'QS. Maryam:30 - Sesungguhnya aku hamba Allah...',hikmah:'Tauhid mukjizat.',doa:'Doa Isa'},
-{n:25,nama:'NABI MUHAMMAD',ar:'ﷺ',utus:'Seluruh manusia jin',lok:'Makkah→Madinah',umur:'63 tahun',muk:"Al-Qur'an abadi, Isra Mi'raj, belah bulan, air dari jari",icon:'📜',kisah:'Al-Amin, 40 th terima Iqra di Hira, mukjizat Al-Qur\'an tak tertandingi, Isra Mi\'raj, belah bulan, air keluar jari 1500 sahabat.',dalil:'QS. Al-Ahzab:40 - Muhammad penutup nabi.',hikmah:'Penutup teladan abadi.',doa:'Allahumma sholli ala Muhammad'}
-];
-let readSet=new Set(JSON.parse(localStorage.getItem('nabi_read')||'[]'));
-let score=parseInt(localStorage.getItem('nabi_score')||'0');
+let data = JSON.parse(localStorage.getItem('umkm_pro_gold_v3')||'[]');
+let editId = null;
+function fmt(n){return 'Rp '+(n||0).toLocaleString('id-ID')}
+function switchTab(name){
+ document.querySelectorAll('[id^=page-]').forEach(e=>e.classList.add('hide'));
+ document.getElementById('page-'+name).classList.remove('hide');
+ document.querySelectorAll('.tab').forEach(e=>e.classList.remove('active'));
+ document.getElementById('t-'+name).classList.add('active');
+ if(name!=='transaksi') renderLaporan();
+ if(name==='grafik') renderGrafik();
+ localStorage.setItem('tab',name);
+}
+function add(){
+ let tgl=document.getElementById('tgl').value; if(!tgl){alert('Tanggal wajib!');return}
+ let uraian=document.getElementById('uraian').value.trim(); if(!uraian){alert('Uraian wajib!');return}
+ let jumlah=parseFloat(document.getElementById('jumlah').value); if(!jumlah){alert('Jumlah wajib!');return}
+ let tipe=document.getElementById('tipe').value;
+ let kategori=document.getElementById('kategori').value;
+ let metode=document.getElementById('metode').value;
+ let obj={id:editId||Date.now(),tgl,uraian,jumlah,tipe,kategori,metode};
+ if(editId){let idx=data.findIndex(d=>d.id===editId); data[idx]=obj; editId=null; document.querySelector('.btn').innerText='SIMPAN TRANSAKSI';}
+ else data.unshift(obj);
+ data.sort((a,b)=> new Date(a.tgl)-new Date(b.tgl));
+ localStorage.setItem('umkm_pro_gold_v3',JSON.stringify(data));
+ resetForm(); render();
+}
+function resetForm(){
+ document.getElementById('uraian').value=''; document.getElementById('jumlah').value='';
+ let today=new Date().toISOString().slice(0,10); document.getElementById('tgl').value=today;
+}
 function render(){
-let q=document.getElementById('cari').value.toLowerCase();
-let list=data.filter(d=>!q||d.nama.toLowerCase().includes(q)||d.muk.toLowerCase().includes(q)||d.kisah.toLowerCase().includes(q));
-let tl=document.getElementById('timeline'); tl.innerHTML='';
-list.forEach(d=>{
-let isRead=readSet.has(d.n);
-let div=document.createElement('div'); div.className='item'+(isRead?' read':'');
-div.onclick=()=>openModal(d.n);
-div.innerHTML=`<div class="dot"></div><div class="card"><div style="display:flex;justify-content:space-between"><span class="no">#${String(d.n).padStart(2,'0')} • ${d.umur}</span><span style="font-size:9px;color:${isRead?'#7CFC9B':'#8a7e53'}">${isRead?'✓ DIBACA':'KLIK'}</span></div><div class="name" style="margin-top:6px"><span style="width:26px;height:26px;border-radius:50%;background:#000;border:1px solid rgba(212,175,55,.3);display:flex;align-items:center;justify-content:center">${d.icon}</span><span><span class="ar">${d.ar}</span> ${d.nama}</span></div><div style="font-size:9px;color:#a99a65;margin-top:4px">📍 ${d.lok} • ${d.utus}</div><div class="muk"><b>${d.icon} ${d.muk}</b></div><div style="font-size:10px;color:#c9b86e;margin-top:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${d.kisah}</div></div>`;
-tl.appendChild(div);
-});
-let pct=Math.round(readSet.size/25*100);
-document.getElementById('prog').style.width=pct+'%';
-document.getElementById('count').innerText=`${readSet.size} dari 25 Nabi telah dibaca • ${pct}% perjalanan selesai • Skor Quiz: ${score}`;
+ let cari=document.getElementById('cari').value.toLowerCase();
+ let fb=document.getElementById('filterBulan').value;
+ let filtered=data.filter(d=>{
+  let okCari=!cari||d.uraian.toLowerCase().includes(cari)||d.kategori.toLowerCase().includes(cari);
+  let okBulan=!fb||d.tgl.startsWith(fb);
+  return okCari&&okBulan;
+ });
+ let pemasukan=0; let pengeluaran=0;
+ data.forEach(d=>{if(d.tipe==='masuk')pemasukan+=d.jumlah; else pengeluaran+=d.jumlah});
+ let sorted=[...data].sort((a,b)=>new Date(a.tgl)-new Date(b.tgl));
+ let saldoMap={}; let run=0; sorted.forEach(d=>{if(d.tipe==='masuk')run+=d.jumlah; else run-=d.jumlah; saldoMap[d.id]=run});
+ document.getElementById('inV').innerText=fmt(pemasukan);
+ document.getElementById('outV').innerText=fmt(pengeluaran);
+ document.getElementById('balV').innerText=fmt(pemasukan-pengeluaran);
+ document.getElementById('count').innerText=filtered.length+' transaksi';
+ let tbody=document.getElementById('list'); tbody.innerHTML='';
+ [...filtered].sort((a,b)=>new Date(b.tgl)-new Date(a.tgl)).forEach(d=>{
+  let tr=document.createElement('tr');
+  let badgeClass=d.metode==='Cash'?'b-cash':d.metode==='Transfer'?'b-tf':'b-qris';
+  let color=d.tipe==='masuk'?'#7CFC9B':'#ff8a8a';
+  let sign=d.tipe==='masuk'?'+ ':'- ';
+  tr.innerHTML=`<td>${d.tgl.slice(5).replace('-','/')}</td><td><div style="font-weight:700">${d.uraian}</div><div class="small">${d.kategori} <span class="badge ${badgeClass}">${d.metode}</span></div></td><td style="color:${color};font-weight:700">${sign}${fmt(d.jumlah)}</td><td class="saldo">${fmt(saldoMap[d.id])}</td><td><span class="act" onclick="edit(${d.id})">✎</span><span class="act" onclick="hapus(${d.id})">✕</span></td>`;
+  tbody.appendChild(tr);
+ });
+ renderBulanFilter();
 }
-function openModal(n){
-let d=data.find(x=>x.n===n);
-readSet.add(n); localStorage.setItem('nabi_read',JSON.stringify([...readSet]));
-let s=document.getElementById('sheet');
-s.innerHTML=`<div style="display:flex;justify-content:space-between"><span class="no">#${String(d.n).padStart(2,'0')} NABI</span><span>${d.icon}</span></div><h2 style="margin-top:8px;color:#f9e27d">${d.nama} <span style="font-family:Amiri,serif;color:#d4af37">${d.ar}</span></h2><div style="font-size:10px;color:#a99a65">📍 ${d.lok} • ⏳ ${d.umur}</div><div class="sec"><h3>✨ MUKJIZAT UTAMA</h3><p style="color:#f9e27d;font-weight:700">${d.icon} ${d.muk}</p></div><div class="sec"><h3>📖 KISAH BERKESAN</h3><p>${d.kisah}</p></div><div class="sec"><h3>🕋 DALIL QUR'AN</h3><p style="font-family:Amiri,serif;color:#d4af37">${d.dalil}</p></div><div class="sec"><h3>💡 HIKMAH HARI INI</h3><p>${d.hikmah}</p></div><div class="sec"><h3>🤲 DOA</h3><p style="color:#ffeaa7;font-style:italic">${d.doa}</p></div><button class="close" onclick="closeModal()">✓ SUDAH BACA - LANJUT →</button>`;
-document.getElementById('modal').classList.add('show'); render();
+function renderBulanFilter(){
+ let sel=document.getElementById('filterBulan');
+ let cur=sel.value;
+ let bulanSet=new Set(data.map(d=>d.tgl.slice(0,7)));
+ let html='<option value="">Semua Bulan</option>';
+ [...bulanSet].sort().reverse().forEach(b=>{let [y,m]=b.split('-'); let nama=new Date(b+'-01').toLocaleDateString('id-ID',{month:'long',year:'numeric'}); html+=`<option value="${b}" ${cur===b?'selected':''}>${nama}</option>`});
+ sel.innerHTML=html;
 }
-function closeModal(){document.getElementById('modal').classList.remove('show')}
-function resetProgress(){if(confirm('Reset semua progress?')){readSet.clear();localStorage.setItem('nabi_read','[]');localStorage.setItem('nabi_score','0');score=0;render()}}
-function toggleQuiz(){let qb=document.getElementById('quiz');qb.classList.toggle('show');if(qb.classList.contains('show'))nextQ()}
-function nextQ(){let d=data[Math.floor(Math.random()*data.length)];document.getElementById('qText').innerText=`Nabi manakah mukjizatnya: "${d.muk}"?`;let opts=[d];while(opts.length<4){let r=data[Math.floor(Math.random()*data.length)];if(!opts.find(o=>o.n===r.n))opts.push(r)}opts=opts.sort(()=>0.5-Math.random());let h='';opts.forEach(o=>{h+=`<div class="qOpt" onclick="checkQ(${o.n},${d.n},this)">${o.icon} ${o.nama}</div>`});document.getElementById('qOpts').innerHTML=h;document.getElementById('qScore').innerText=`Skor: ${score}`}
-function checkQ(c,a,el){let all=document.querySelectorAll('.qOpt');all.forEach(e=>e.style.pointerEvents='none');if(c===a){el.classList.add('correct');score++;localStorage.setItem('nabi_score',score);document.getElementById('qScore').innerText=`✅ Benar! ${data.find(x=>x.n===a).nama}`;}else{el.classList.add('wrong');all.forEach(e=>{if(e.textContent.includes(data.find(x=>x.n===a).nama))e.classList.add('correct')});document.getElementById('qScore').innerText=`❌ Salah. Jawaban: ${data.find(x=>x.n===a).nama}`;}render();}
-render();
+function edit(id){
+ let d=data.find(x=>x.id===id); if(!d)return;
+ editId=id;
+ document.getElementById('tgl').value=d.tgl;
+ document.getElementById('uraian').value=d.uraian;
+ document.getElementById('jumlah').value=d.jumlah;
+ document.getElementById('tipe').value=d.tipe;
+ document.getElementById('kategori').value=d.kategori;
+ document.getElementById('metode').value=d.metode;
+ document.querySelector('.btn').innerText='UPDATE TRANSAKSI';
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function hapus(id){if(!confirm('Hapus transaksi ini?'))return; data=data.filter(d=>d.id!==id); localStorage.setItem('umkm_pro_gold_v3',JSON.stringify(data)); render();}
+function hapusSemua(){if(!confirm('Hapus SEMUA data?'))return; data=[]; localStorage.setItem('umkm_pro_gold_v3','[]'); render();}
+function renderLaporan(){
+ let perKat={}; data.forEach(d=>{let k=d.kategori; if(!perKat[k])perKat[k]={masuk:0,keluar:0}; if(d.tipe==='masuk')perKat[k].masuk+=d.jumlah; else perKat[k].keluar+=d.jumlah;});
+ let html=''; for(let k in perKat){let total=perKat[k].masuk-perKat[k].keluar; html+=`<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05)"><span style="font-size:11px">${k}</span><span style="font-size:11px;font-weight:700;color:${total>=0?'#7CFC9B':'#ff8a8a'}">${fmt(total)}</span></div>`}
+ document.getElementById('perKat').innerHTML=html||'<div class="small">Belum ada data</div>';
+ let perBulan={}; data.forEach(d=>{let b=d.tgl.slice(0,7); if(!perBulan[b])perBulan[b]=0; perBulan[b]+=d.tipe==='masuk'?d.jumlah:-d.jumlah;});
+ let html2=''; Object.keys(perBulan).sort().reverse().forEach(b=>{let nama=new Date(b+'-01').toLocaleDateString('id-ID',{month:'long',year:'numeric'}); html2+=`<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05)"><span style="font-size:11px">${nama}</span><span style="font-size:11px;font-weight:700">${fmt(perBulan[b])}</span></div>`});
+ document.getElementById('perBulan').innerHTML=html2||'<div class="small">Belum ada data</div>';
+}
+function renderGrafik(){
+ let last7=[]; for(let i=6;i>=0;i--){let dt=new Date(); dt.setDate(dt.getDate()-i); let iso=dt.toISOString().slice(0,10); let sum=0; data.filter(d=>d.tgl===iso && d.tipe==='masuk').forEach(d=>sum+=d.jumlah); last7.push({d:iso.slice(5).replace('-','/'),v:sum})}
+ let max=Math.max(...last7.map(x=>x.v),1);
+ let bar=document.getElementById('bar7'); bar.innerHTML='';
+ last7.forEach(x=>{let h=(x.v/max*80)+4; let el=document.createElement('div'); el.style.height=h+'px'; el.innerHTML=`<span>${x.v? (x.v/1000).toFixed(0)+'k':''}</span>`; el.title=x.d+' '+fmt(x.v); bar.appendChild(el)});
+ let katSum={}; let totalMasuk=0; data.filter(d=>d.tipe==='masuk').forEach(d=>{katSum[d.kategori]=(katSum[d.kategori]||0)+d.jumlah; totalMasuk+=d.jumlah;});
+ if(totalMasuk>0){let firstKey=Object.keys(katSum)[0]; let pct=(katSum[firstKey]/totalMasuk*100).toFixed(0); document.getElementById('pieLabel').innerHTML=pct+'%<br>'+firstKey; document.getElementById('katLegend').innerHTML=Object.entries(katSum).map(([k,v])=>`${k} - ${((v/totalMasuk)*100).toFixed(0)}% (${fmt(v)})`).join('<br>')}
+}
+function exportCSV(){
+ if(!data.length){alert('Belum ada data');return}
+ let csv='Tanggal,Uraian,Jumlah,Tipe,Kategori,Metode,Saldo\n';
+ let sorted=[...data].sort((a,b)=>new Date(a.tgl)-new Date(b.tgl)); let run=0;
+ sorted.forEach(d=>{if(d.tipe==='masuk')run+=d.jumlah; else run-=d.jumlah; csv+=`${d.tgl},"${d.uraian}",${d.jumlah},${d.tipe},${d.kategori},${d.metode},${run}\n`});
+ let blob=new Blob([csv],{type:'text/csv'}); let a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='umkm-pro-gold-'+new Date().toISOString().slice(0,10)+'.csv'; a.click();
+}
+function exportPDF(){
+ if(!data.length){alert('Belum ada data');return}
+ let w=window.open('','_blank'); let rows=data.map(d=>`<tr><td>${d.tgl}</td><td>${d.uraian}</td><td>${d.kategori}</td><td>${d.metode}</td><td>${d.tipe==='masuk'?'+':'-'} ${d.jumlah.toLocaleString('id-ID')}</td></tr>`).join('');
+ w.document.write(`<html><head><title>PDF UMKM PRO</title><style>body{font-family:sans-serif;padding:20px} table{width:100%;border-collapse:collapse} td,th{border:1px solid #ccc;padding:6px;font-size:11px} h1{color:#a67c00}</style></head><body><h1>TEMPLATE UMKM PRO NOTARIS GOLD BLACK SHIMMER</h1><p>Tanggal Cetak: ${new Date().toLocaleString('id-ID')}</p><table><tr><th>Tgl</th><th>Uraian</th><th>Kategori</th><th>Metode</th><th>Jumlah</th></tr>${rows}</table></body></html>`); w.document.close(); w.print();
+}
+function backup(){
+ let blob=new Blob([JSON.stringify(data)],{type:'application/json'}); let a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='backup-umkm-gold-'+Date.now()+'.json'; a.click();
+}
+(function init(){
+ let today=new Date().toISOString().slice(0,10); document.getElementById('tgl').value=today;
+ if(data.length===0){
+   data=[{id:1,tgl:today,uraian:'Kopi, gula, beras, bensin',jumlah:63069,tipe:'masuk',kategori:'Penjualan',metode:'Cash'}];
+   localStorage.setItem('umkm_pro_gold_v3',JSON.stringify(data));
+ }
+ render();
+ let savedTab=localStorage.getItem('tab'); if(savedTab) switchTab(savedTab);
+})();
 </script>
 </body>
 </html>
